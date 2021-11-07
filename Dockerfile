@@ -16,7 +16,7 @@ RUN git clone https://github.com/cytomine-uliege/Cytomine-python-client.git && \
 RUN apt-get update && apt-get install -y unzip xvfb libx11-dev libxtst-dev libxrender-dev
 
 # Install Fiji.
-RUN wget https://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20170530.zip
+RUN wget --no-check-certificate https://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20170530.zip
 RUN unzip fiji-linux64-20170530.zip
 RUN mv Fiji.app/ fiji
 
