@@ -1,0 +1,73 @@
+{
+  "command-line": "python wrapper.py ... IJ_METHOD ",
+  "inputs": [
+    {
+      "name": "Cytomine host",
+      "description": "Cytomine server hostname",
+      "set-by-server": true,
+      "value-key": "@ID",
+      "optional": false,
+      "id": "cytomine_host",
+      "type": "String",
+      "command-line-flag": "--@id"
+    },
+    {
+      "name": "Cytomine public key",
+      "description": "Cytomine public key",
+      "set-by-server": true,
+      "value-key": "@ID",
+      "optional": false,
+      "id": "cytomine_public_key",
+      "type": "String",
+      "command-line-flag": "--@id"
+    },
+    {
+      "name": "Cytomine private key",
+      "description": "Cytomine private key",
+      "set-by-server": true,
+      "value-key": "@ID",
+      "optional": false,
+      "id": "cytomine_private_key",
+      "type": "String",
+      "command-line-flag": "--@id"
+    },
+    {
+      "name": "Cytomine project id",
+      "description": "Cytomine project id",
+      "set-by-server": true,
+      "value-key": "@ID",
+      "optional": false,
+      "id": "cytomine_id_project",
+      "type": "Number",
+      "command-line-flag": "--@id"
+    },
+    {
+      "name": "Cytomine software id",
+      "description": "Cytomine software id",
+      "set-by-server": true,
+      "value-key": "@ID",
+      "optional": false,
+      "id": "cytomine_id_software",
+      "type": "Number",
+      "command-line-flag": "--@id"
+    },
+    {
+      "default-value": Default,
+      "name": "method",
+      "description": "Auto-thresholding method",
+      "set-by-server": false,
+      "value-key": "@ID",
+      "optional": true,
+      "id": "ij_method",
+      "type": "String",
+      "command-line-flag": "--@id"
+    },
+  ],
+  "name": "VOLKER_MIFOBIO_EXAMPLE_SEG",
+  "description": "Segment nuclei using auto-thresholding",
+  "schema-version": "cytomine-0.1",
+  "container-image": {
+    "image": "baecker/w_volker_mifobio_example_seg",
+    "type": "singularity"
+  }
+}
